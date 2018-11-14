@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.PushLogMapper">
+        <resultMap type="PushLog" id="RM">
+                <id column="id" property="id"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="status" property="status"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="content" property="content"/>
+                    <result column="aim" property="aim"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="title" property="title"/>
+                    <result column="period_validity" property="periodValidity"/>
+                    <result column="aim_url" property="aimUrl"/>
+        </resultMap>
+        <resultMap type="PushLog" id="AliasRM">
+                <id column="alias_push_log_id" property="id"/>
+                    <result column="alias_push_log_content" property="content"/>
+                    <result column="alias_push_log_user_id" property="userId"/>
+                    <result column="alias_push_log_title" property="title"/>
+                    <result column="alias_push_log_period_validity" property="periodValidity"/>
+                    <result column="alias_push_log_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_push_log_status" property="status"/>
+                    <result column="alias_push_log_aim" property="aim"/>
+                    <result column="alias_push_log_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_push_log_aim_url" property="aimUrl"/>
+        </resultMap>
+</mapper>

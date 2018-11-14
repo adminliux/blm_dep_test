@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.RoomInstantMsgMapper">
+        <resultMap type="RoomInstantMsg" id="RM">
+                <id column="id" property="id"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="last_msg" property="lastMsg"/>
+                    <result column="msg_type" property="msgType"/>
+                    <result column="room_id" property="roomId"/>
+                    <result column="user_id" property="userId"/>
+        </resultMap>
+        <resultMap type="RoomInstantMsg" id="AliasRM">
+                <id column="alias_room_instant_msg_id" property="id"/>
+                    <result column="alias_room_instant_msg_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_room_instant_msg_msg_type" property="msgType"/>
+                    <result column="alias_room_instant_msg_room_id" property="roomId"/>
+                    <result column="alias_room_instant_msg_user_id" property="userId"/>
+                    <result column="alias_room_instant_msg_last_msg" property="lastMsg"/>
+                    <result column="alias_room_instant_msg_gmt_datetime" property="gmtDatetime"/>
+        </resultMap>
+</mapper>

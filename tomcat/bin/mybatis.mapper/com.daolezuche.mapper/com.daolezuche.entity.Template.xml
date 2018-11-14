@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.TemplateMapper">
+        <resultMap type="Template" id="RM">
+                <id column="id" property="id"/>
+                    <result column="content1" property="content1"/>
+                    <result column="type" property="type"/>
+                    <result column="content2" property="content2"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="status" property="status"/>
+        </resultMap>
+        <resultMap type="Template" id="AliasRM">
+                <id column="alias_template_id" property="id"/>
+                    <result column="alias_template_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_template_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_template_status" property="status"/>
+                    <result column="alias_template_content1" property="content1"/>
+                    <result column="alias_template_type" property="type"/>
+                    <result column="alias_template_content2" property="content2"/>
+        </resultMap>
+</mapper>

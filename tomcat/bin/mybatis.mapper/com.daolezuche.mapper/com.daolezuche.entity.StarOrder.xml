@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.StarOrderMapper">
+        <resultMap type="StarOrder" id="RM">
+                <id column="id" property="id"/>
+                    <result column="sort" property="sort"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="user_name" property="userName"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+        </resultMap>
+        <resultMap type="StarOrder" id="AliasRM">
+                <id column="alias_star_order_id" property="id"/>
+                    <result column="alias_star_order_user_id" property="userId"/>
+                    <result column="alias_star_order_sort" property="sort"/>
+                    <result column="alias_star_order_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_star_order_user_name" property="userName"/>
+                    <result column="alias_star_order_upt_datetime" property="uptDatetime"/>
+        </resultMap>
+</mapper>

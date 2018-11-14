@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.entity.Comment">
+        <resultMap type="Comment" id="AliasRM">
+                    <result column="alias_comment_create_date" property="createDate"/>
+                    <result column="alias_comment_user_id" property="userId"/>
+                    <result column="alias_comment_rela_id" property="relaId"/>
+                    <result column="alias_comment_start_date" property="startDate"/>
+                    <result column="alias_comment_type" property="type"/>
+                    <result column="alias_comment_my_str" property="myStr"/>
+                    <result column="alias_comment_sort" property="sort"/>
+                    <result column="alias_comment_end_date" property="endDate"/>
+                    <result column="alias_comment_id" property="id"/>
+        </resultMap>
+        <resultMap type="Comment" id="RM">
+                    <result column="create_date" property="createDate"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="rela_id" property="relaId"/>
+                    <result column="my_str" property="myStr"/>
+                    <result column="type" property="type"/>
+                    <result column="start_date" property="startDate"/>
+                    <result column="id" property="id"/>
+                    <result column="end_date" property="endDate"/>
+                    <result column="sort" property="sort"/>
+        </resultMap>
+</mapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.ActivityMapper">
+        <resultMap type="Activity" id="RM">
+                <id column="id" property="id"/>
+                    <result column="name" property="name"/>
+                    <result column="status" property="status"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="sign_price" property="signPrice"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+        </resultMap>
+        <resultMap type="Activity" id="AliasRM">
+                <id column="alias_activity_id" property="id"/>
+                    <result column="alias_activity_sign_price" property="signPrice"/>
+                    <result column="alias_activity_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_activity_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_activity_name" property="name"/>
+                    <result column="alias_activity_status" property="status"/>
+        </resultMap>
+</mapper>

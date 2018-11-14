@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.UserChatRoomMapper">
+        <resultMap type="UserChatRoom" id="RM">
+                <id column="id" property="id"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="classify_id" property="classifyId"/>
+                    <result column="head_portrait" property="headPortrait"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="tribe_id" property="tribeId"/>
+                    <result column="name" property="name"/>
+                    <result column="exercise_yard" property="exerciseYard"/>
+                    <result column="city_id" property="cityId"/>
+                    <result column="longitude" property="longitude"/>
+                    <result column="intro" property="intro"/>
+                    <result column="latitude" property="latitude"/>
+        </resultMap>
+        <resultMap type="UserChatRoom" id="AliasRM">
+                <id column="alias_user_chat_room_id" property="id"/>
+                    <result column="alias_user_chat_room_longitude" property="longitude"/>
+                    <result column="alias_user_chat_room_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_user_chat_room_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_user_chat_room_intro" property="intro"/>
+                    <result column="alias_user_chat_room_latitude" property="latitude"/>
+                    <result column="alias_user_chat_room_head_portrait" property="headPortrait"/>
+                    <result column="alias_user_chat_room_city_id" property="cityId"/>
+                    <result column="alias_user_chat_room_name" property="name"/>
+                    <result column="alias_user_chat_room_user_id" property="userId"/>
+                    <result column="alias_user_chat_room_exercise_yard" property="exerciseYard"/>
+                    <result column="alias_user_chat_room_classify_id" property="classifyId"/>
+                    <result column="alias_user_chat_room_tribe_id" property="tribeId"/>
+        </resultMap>
+</mapper>

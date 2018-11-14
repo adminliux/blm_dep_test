@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.WebRegistMapper">
+        <resultMap type="WebRegist" id="RM">
+                <id column="id" property="id"/>
+                    <result column="collage_id" property="collageId"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="sign_up" property="signUp"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="type" property="type"/>
+                    <result column="rela_id" property="relaId"/>
+                    <result column="phone" property="phone"/>
+                    <result column="loc" property="loc"/>
+        </resultMap>
+        <resultMap type="WebRegist" id="AliasRM">
+                <id column="alias_web_regist_id" property="id"/>
+                    <result column="alias_web_regist_collage_id" property="collageId"/>
+                    <result column="alias_web_regist_rela_id" property="relaId"/>
+                    <result column="alias_web_regist_phone" property="phone"/>
+                    <result column="alias_web_regist_sign_up" property="signUp"/>
+                    <result column="alias_web_regist_type" property="type"/>
+                    <result column="alias_web_regist_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_web_regist_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_web_regist_loc" property="loc"/>
+        </resultMap>
+</mapper>

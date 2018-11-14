@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rpframework.module.common.bottom.mapper.JurisdictionMapper">
+        <resultMap type="Jurisdiction" id="AliasRM">
+                <id column="alias_jurisdiction_id" property="id"/>
+                    <result column="alias_jurisdiction_logo" property="logo"/>
+                    <result column="alias_jurisdiction_introduce" property="introduce"/>
+                    <result column="alias_jurisdiction_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_jurisdiction_fix_id" property="fixId"/>
+                    <result column="alias_jurisdiction_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_jurisdiction_cancel" property="cancel"/>
+                    <result column="alias_jurisdiction_request_type" property="requestType"/>
+        </resultMap>
+        <resultMap type="Jurisdiction" id="RM">
+                <id column="id" property="id"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="introduce" property="introduce"/>
+                    <result column="fix_id" property="fixId"/>
+                    <result column="request_type" property="requestType"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="cancel" property="cancel"/>
+                    <result column="logo" property="logo"/>
+        </resultMap>
+</mapper>

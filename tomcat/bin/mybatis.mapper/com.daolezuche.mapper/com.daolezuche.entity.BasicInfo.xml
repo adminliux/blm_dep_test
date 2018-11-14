@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.entity.BasicInfo">
+        <resultMap type="BasicInfo" id="AliasRM">
+                    <result column="alias_basic_info_update_time" property="updateTime"/>
+                    <result column="alias_basic_info_region" property="region"/>
+                    <result column="alias_basic_info_expire_time" property="expireTime"/>
+                    <result column="alias_basic_info_type" property="type"/>
+                    <result column="alias_basic_info_classification_id" property="classificationId"/>
+                    <result column="alias_basic_info_duration" property="duration"/>
+                    <result column="alias_basic_info_cover_url" property="coverUrl"/>
+                    <result column="alias_basic_info_create_time" property="createTime"/>
+                    <result column="alias_basic_info_total_size" property="totalSize"/>
+                    <result column="alias_basic_info_size" property="size"/>
+                    <result column="alias_basic_info_player_id" property="playerId"/>
+                    <result column="alias_basic_info_description" property="description"/>
+                    <result column="alias_basic_info_source_context" property="sourceContext"/>
+                    <result column="alias_basic_info_source_info" property="sourceInfo"/>
+                    <result column="alias_basic_info_name" property="name"/>
+                    <result column="alias_basic_info_tags" property="tags"/>
+                    <result column="alias_basic_info_classification_name" property="classificationName"/>
+                    <result column="alias_basic_info_status" property="status"/>
+                    <result column="alias_basic_info_source_video_url" property="sourceVideoUrl"/>
+        </resultMap>
+        <resultMap type="BasicInfo" id="RM">
+                    <result column="source_video_url" property="sourceVideoUrl"/>
+                    <result column="type" property="type"/>
+                    <result column="source_info" property="sourceInfo"/>
+                    <result column="source_context" property="sourceContext"/>
+                    <result column="description" property="description"/>
+                    <result column="cover_url" property="coverUrl"/>
+                    <result column="expire_time" property="expireTime"/>
+                    <result column="create_time" property="createTime"/>
+                    <result column="classification_name" property="classificationName"/>
+                    <result column="tags" property="tags"/>
+                    <result column="duration" property="duration"/>
+                    <result column="size" property="size"/>
+                    <result column="total_size" property="totalSize"/>
+                    <result column="classification_id" property="classificationId"/>
+                    <result column="name" property="name"/>
+                    <result column="update_time" property="updateTime"/>
+                    <result column="region" property="region"/>
+                    <result column="status" property="status"/>
+                    <result column="player_id" property="playerId"/>
+        </resultMap>
+</mapper>

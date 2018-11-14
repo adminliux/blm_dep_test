@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.UnversityMapper">
+        <resultMap type="Unversity" id="AliasRM">
+                <id column="alias_unversity_id" property="id"/>
+                    <result column="alias_unversity_un_name" property="unName"/>
+                    <result column="alias_unversity_biref_info" property="birefInfo"/>
+                    <result column="alias_unversity_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_unversity_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_unversity_un_look" property="unLook"/>
+                    <result column="alias_unversity_sort" property="sort"/>
+        </resultMap>
+        <resultMap type="Unversity" id="RM">
+                <id column="id" property="id"/>
+                    <result column="sort" property="sort"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="un_name" property="unName"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="un_look" property="unLook"/>
+                    <result column="biref_info" property="birefInfo"/>
+        </resultMap>
+</mapper>

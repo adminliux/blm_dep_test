@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.SpecCourseMapper">
+        <resultMap type="SpecCourse" id="RM">
+                <id column="id" property="id"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="course_id" property="courseId"/>
+                    <result column="spec_id" property="specId"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+        </resultMap>
+        <resultMap type="SpecCourse" id="AliasRM">
+                <id column="alias_spec_course_id" property="id"/>
+                    <result column="alias_spec_course_spec_id" property="specId"/>
+                    <result column="alias_spec_course_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_spec_course_course_id" property="courseId"/>
+                    <result column="alias_spec_course_gmt_datetime" property="gmtDatetime"/>
+        </resultMap>
+</mapper>

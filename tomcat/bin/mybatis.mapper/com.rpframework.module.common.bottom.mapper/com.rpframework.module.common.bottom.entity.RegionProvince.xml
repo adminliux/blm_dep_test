@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rpframework.module.common.bottom.mapper.RegionProvinceMapper">
+        <resultMap type="RegionProvince" id="AliasRM">
+                <id column="alias_region_province_code" property="code"/>
+                    <result column="alias_region_province_global_code" property="globalCode"/>
+                    <result column="alias_region_province_capital_city" property="capitalCity"/>
+                    <result column="alias_region_province_thumb_name" property="thumbName"/>
+                    <result column="alias_region_province_area" property="area"/>
+                    <result column="alias_region_province_provincial_address" property="provincialAddress"/>
+                    <result column="alias_region_province_name" property="name"/>
+                    <result column="alias_region_province_population" property="population"/>
+                    <result column="alias_region_province_iso_code" property="isoCode"/>
+        </resultMap>
+        <resultMap type="RegionProvince" id="RM">
+                <id column="code" property="code"/>
+                    <result column="area" property="area"/>
+                    <result column="capital_city" property="capitalCity"/>
+                    <result column="population" property="population"/>
+                    <result column="thumb_name" property="thumbName"/>
+                    <result column="name" property="name"/>
+                    <result column="global_code" property="globalCode"/>
+                    <result column="provincial_address" property="provincialAddress"/>
+                    <result column="iso_code" property="isoCode"/>
+        </resultMap>
+</mapper>

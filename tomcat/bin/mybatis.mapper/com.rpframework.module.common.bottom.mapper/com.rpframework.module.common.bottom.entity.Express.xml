@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rpframework.module.common.bottom.mapper.ExpressMapper">
+        <resultMap type="Express" id="RM">
+                <id column="id" property="id"/>
+                    <result column="name" property="name"/>
+                    <result column="code" property="code"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+        </resultMap>
+        <resultMap type="Express" id="AliasRM">
+                <id column="alias_express_id" property="id"/>
+                    <result column="alias_express_name" property="name"/>
+                    <result column="alias_express_code" property="code"/>
+                    <result column="alias_express_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_express_gmt_datetime" property="gmtDatetime"/>
+        </resultMap>
+</mapper>

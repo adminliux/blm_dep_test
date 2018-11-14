@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.TagLibraryMapper">
+        <resultMap type="TagLibrary" id="AliasRM">
+                <id column="alias_tag_library_id" property="id"/>
+                    <result column="alias_tag_library_name" property="name"/>
+                    <result column="alias_tag_library_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_tag_library_status" property="status"/>
+                    <result column="alias_tag_library_type" property="type"/>
+                    <result column="alias_tag_library_gmt_datetime" property="gmtDatetime"/>
+        </resultMap>
+        <resultMap type="TagLibrary" id="RM">
+                <id column="id" property="id"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="status" property="status"/>
+                    <result column="type" property="type"/>
+                    <result column="name" property="name"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+        </resultMap>
+</mapper>

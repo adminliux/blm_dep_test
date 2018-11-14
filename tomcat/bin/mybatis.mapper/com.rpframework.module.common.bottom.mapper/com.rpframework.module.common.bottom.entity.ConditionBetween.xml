@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rpframework.module.common.bottom.mapper.ConditionBetweenMapper">
+        <resultMap type="ConditionBetween" id="AliasRM">
+                <id column="alias_condition_between_id" property="id"/>
+                    <result column="alias_condition_between_po_class" property="poClass"/>
+                    <result column="alias_condition_between_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_condition_between_name" property="name"/>
+                    <result column="alias_condition_between_upt_datetime" property="uptDatetime"/>
+        </resultMap>
+        <resultMap type="ConditionBetween" id="RM">
+                <id column="id" property="id"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="name" property="name"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="po_class" property="poClass"/>
+        </resultMap>
+</mapper>

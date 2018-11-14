@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.ActivitySignMapper">
+        <resultMap type="ActivitySign" id="AliasRM">
+                <id column="alias_activity_sign_id" property="id"/>
+                    <result column="alias_activity_sign_pay_type" property="payType"/>
+                    <result column="alias_activity_sign_user_id" property="userId"/>
+                    <result column="alias_activity_sign_name" property="name"/>
+                    <result column="alias_activity_sign_birthday" property="birthday"/>
+                    <result column="alias_activity_sign_sex" property="sex"/>
+                    <result column="alias_activity_sign_status" property="status"/>
+                    <result column="alias_activity_sign_pay_call_data" property="payCallData"/>
+                    <result column="alias_activity_sign_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_activity_sign_city_id" property="cityId"/>
+                    <result column="alias_activity_sign_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_activity_sign_payment" property="payment"/>
+                    <result column="alias_activity_sign_phone" property="phone"/>
+                    <result column="alias_activity_sign_activity_id" property="activityId"/>
+                    <result column="alias_activity_sign_social_id" property="socialId"/>
+        </resultMap>
+        <resultMap type="ActivitySign" id="RM">
+                <id column="id" property="id"/>
+                    <result column="birthday" property="birthday"/>
+                    <result column="pay_call_data" property="payCallData"/>
+                    <result column="social_id" property="socialId"/>
+                    <result column="city_id" property="cityId"/>
+                    <result column="name" property="name"/>
+                    <result column="sex" property="sex"/>
+                    <result column="status" property="status"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="payment" property="payment"/>
+                    <result column="activity_id" property="activityId"/>
+                    <result column="pay_type" property="payType"/>
+                    <result column="phone" property="phone"/>
+        </resultMap>
+</mapper>

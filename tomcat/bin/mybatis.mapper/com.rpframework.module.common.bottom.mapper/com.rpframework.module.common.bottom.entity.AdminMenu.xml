@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rpframework.module.common.bottom.mapper.AdminMenuMapper">
+        <resultMap type="AdminMenu" id="RM">
+                <id column="id" property="id"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="name" property="name"/>
+                    <result column="parent_id" property="parentId"/>
+                    <result column="url" property="url"/>
+        </resultMap>
+        <resultMap type="AdminMenu" id="AliasRM">
+                <id column="alias_admin_menu_id" property="id"/>
+                    <result column="alias_admin_menu_parent_id" property="parentId"/>
+                    <result column="alias_admin_menu_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_admin_menu_name" property="name"/>
+                    <result column="alias_admin_menu_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_admin_menu_url" property="url"/>
+        </resultMap>
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rpframework.module.common.bottom.mapper.AdminUserMapper">
+        <resultMap type="AdminUser" id="RM">
+                <id column="id" property="id"/>
+                    <result column="name" property="name"/>
+                    <result column="login_time" property="loginTime"/>
+                    <result column="password" property="password"/>
+                    <result column="last_time" property="lastTime"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="type" property="type"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="role_id" property="roleId"/>
+        </resultMap>
+        <resultMap type="AdminUser" id="AliasRM">
+                <id column="alias_admin_user_id" property="id"/>
+                    <result column="alias_admin_user_role_id" property="roleId"/>
+                    <result column="alias_admin_user_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_admin_user_last_time" property="lastTime"/>
+                    <result column="alias_admin_user_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_admin_user_name" property="name"/>
+                    <result column="alias_admin_user_password" property="password"/>
+                    <result column="alias_admin_user_login_time" property="loginTime"/>
+                    <result column="alias_admin_user_type" property="type"/>
+        </resultMap>
+</mapper>

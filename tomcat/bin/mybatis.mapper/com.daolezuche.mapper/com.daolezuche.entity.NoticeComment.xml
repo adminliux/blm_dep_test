@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.NoticeCommentMapper">
+        <resultMap type="NoticeComment" id="AliasRM">
+                <id column="alias_notice_comment_id" property="id"/>
+                    <result column="alias_notice_comment_status" property="status"/>
+                    <result column="alias_notice_comment_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_notice_comment_content" property="content"/>
+                    <result column="alias_notice_comment_user_id" property="userId"/>
+                    <result column="alias_notice_comment_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_notice_comment_video_id" property="videoId"/>
+                    <result column="alias_notice_comment_parent_id" property="parentId"/>
+                    <result column="alias_notice_comment_praise_sum" property="praiseSum"/>
+        </resultMap>
+        <resultMap type="NoticeComment" id="RM">
+                <id column="id" property="id"/>
+                    <result column="content" property="content"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="status" property="status"/>
+                    <result column="praise_sum" property="praiseSum"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="video_id" property="videoId"/>
+                    <result column="parent_id" property="parentId"/>
+        </resultMap>
+</mapper>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.entity.Transcode">
+        <resultMap type="Transcode" id="AliasRM">
+                    <result column="alias_transcode_video_stream_list" property="videoStreamList"/>
+                    <result column="alias_transcode_url" property="url"/>
+                    <result column="alias_transcode_md5" property="md5"/>
+                    <result column="alias_transcode_container" property="container"/>
+                    <result column="alias_transcode_total_size" property="totalSize"/>
+                    <result column="alias_transcode_audio_stream_list" property="audioStreamList"/>
+                    <result column="alias_transcode_height" property="height"/>
+                    <result column="alias_transcode_template_name" property="templateName"/>
+                    <result column="alias_transcode_size" property="size"/>
+                    <result column="alias_transcode_bitrate" property="bitrate"/>
+                    <result column="alias_transcode_float_duration" property="floatDuration"/>
+                    <result column="alias_transcode_width" property="width"/>
+                    <result column="alias_transcode_definition" property="definition"/>
+                    <result column="alias_transcode_duration" property="duration"/>
+        </resultMap>
+        <resultMap type="Transcode" id="RM">
+                    <result column="total_size" property="totalSize"/>
+                    <result column="audio_stream_list" property="audioStreamList"/>
+                    <result column="md5" property="md5"/>
+                    <result column="size" property="size"/>
+                    <result column="width" property="width"/>
+                    <result column="duration" property="duration"/>
+                    <result column="video_stream_list" property="videoStreamList"/>
+                    <result column="container" property="container"/>
+                    <result column="height" property="height"/>
+                    <result column="definition" property="definition"/>
+                    <result column="float_duration" property="floatDuration"/>
+                    <result column="url" property="url"/>
+                    <result column="bitrate" property="bitrate"/>
+                    <result column="template_name" property="templateName"/>
+        </resultMap>
+</mapper>

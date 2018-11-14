@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rpframework.module.common.bottom.mapper.RegionCityMapper">
+        <resultMap type="RegionCity" id="RM">
+                <id column="code" property="code"/>
+                    <result column="area" property="area"/>
+                    <result column="name" property="name"/>
+                    <result column="population" property="population"/>
+                    <result column="station" property="station"/>
+                    <result column="postal_code" property="postalCode"/>
+                    <result column="country_code" property="countryCode"/>
+                    <result column="level" property="level"/>
+                    <result column="dimensions" property="dimensions"/>
+                    <result column="area_code" property="areaCode"/>
+                    <result column="longitude" property="longitude"/>
+        </resultMap>
+        <resultMap type="RegionCity" id="AliasRM">
+                <id column="alias_region_city_code" property="code"/>
+                    <result column="alias_region_city_name" property="name"/>
+                    <result column="alias_region_city_population" property="population"/>
+                    <result column="alias_region_city_country_code" property="countryCode"/>
+                    <result column="alias_region_city_station" property="station"/>
+                    <result column="alias_region_city_dimensions" property="dimensions"/>
+                    <result column="alias_region_city_area" property="area"/>
+                    <result column="alias_region_city_postal_code" property="postalCode"/>
+                    <result column="alias_region_city_longitude" property="longitude"/>
+                    <result column="alias_region_city_level" property="level"/>
+                    <result column="alias_region_city_area_code" property="areaCode"/>
+        </resultMap>
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.LiveCourseCollectionMapper">
+        <resultMap type="LiveCourseCollection" id="AliasRM">
+                <id column="alias_live_course_collection_id" property="id"/>
+                    <result column="alias_live_course_collection_user_id" property="userId"/>
+                    <result column="alias_live_course_collection_coll_id" property="collId"/>
+                    <result column="alias_live_course_collection_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_live_course_collection_gmt_datetime" property="gmtDatetime"/>
+        </resultMap>
+        <resultMap type="LiveCourseCollection" id="RM">
+                <id column="id" property="id"/>
+                    <result column="coll_id" property="collId"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+        </resultMap>
+</mapper>

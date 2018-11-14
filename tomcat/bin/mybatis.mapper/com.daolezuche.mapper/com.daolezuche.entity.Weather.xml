@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.entity.Weather">
+        <resultMap type="Weather" id="AliasRM">
+                    <result column="alias_weather_date" property="date"/>
+                    <result column="alias_weather_pm10" property="pm10"/>
+                    <result column="alias_weather_temperature" property="temperature"/>
+                    <result column="alias_weather_status" property="status"/>
+                    <result column="alias_weather_quality" property="quality"/>
+                    <result column="alias_weather_user_id" property="userId"/>
+                    <result column="alias_weather_shidu" property="shidu"/>
+                    <result column="alias_weather_message" property="message"/>
+                    <result column="alias_weather_pm25" property="pm25"/>
+        </resultMap>
+        <resultMap type="Weather" id="RM">
+                    <result column="quality" property="quality"/>
+                    <result column="status" property="status"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="message" property="message"/>
+                    <result column="temperature" property="temperature"/>
+                    <result column="date" property="date"/>
+                    <result column="shidu" property="shidu"/>
+                    <result column="pm25" property="pm25"/>
+                    <result column="pm10" property="pm10"/>
+        </resultMap>
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rpframework.module.common.bottom.mapper.RegionCountyMapper">
+        <resultMap type="RegionCounty" id="RM">
+                <id column="code" property="code"/>
+                    <result column="station" property="station"/>
+                    <result column="postal_code" property="postalCode"/>
+                    <result column="dimensions" property="dimensions"/>
+                    <result column="area" property="area"/>
+                    <result column="level" property="level"/>
+                    <result column="name" property="name"/>
+                    <result column="longitude" property="longitude"/>
+                    <result column="area_code" property="areaCode"/>
+                    <result column="province_code" property="provinceCode"/>
+        </resultMap>
+        <resultMap type="RegionCounty" id="AliasRM">
+                <id column="alias_region_county_code" property="code"/>
+                    <result column="alias_region_county_station" property="station"/>
+                    <result column="alias_region_county_postal_code" property="postalCode"/>
+                    <result column="alias_region_county_level" property="level"/>
+                    <result column="alias_region_county_longitude" property="longitude"/>
+                    <result column="alias_region_county_province_code" property="provinceCode"/>
+                    <result column="alias_region_county_area" property="area"/>
+                    <result column="alias_region_county_name" property="name"/>
+                    <result column="alias_region_county_dimensions" property="dimensions"/>
+                    <result column="alias_region_county_area_code" property="areaCode"/>
+        </resultMap>
+</mapper>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.CourseDetialMapper">
+        <resultMap type="CourseDetial" id="AliasRM">
+                <id column="alias_course_detial_id" property="id"/>
+                    <result column="alias_course_detial_type" property="type"/>
+                    <result column="alias_course_detial_pull_rtmp_url" property="pullRtmpUrl"/>
+                    <result column="alias_course_detial_status" property="status"/>
+                    <result column="alias_course_detial_course_id" property="courseId"/>
+                    <result column="alias_course_detial_address" property="address"/>
+                    <result column="alias_course_detial_pull_url" property="pullUrl"/>
+                    <result column="alias_course_detial_begin_time" property="beginTime"/>
+                    <result column="alias_course_detial_price" property="price"/>
+                    <result column="alias_course_detial_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_course_detial_end_time" property="endTime"/>
+                    <result column="alias_course_detial_preview_img" property="previewImg"/>
+                    <result column="alias_course_detial_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_course_detial_title" property="title"/>
+                    <result column="alias_course_detial_push_url" property="pushUrl"/>
+        </resultMap>
+        <resultMap type="CourseDetial" id="RM">
+                <id column="id" property="id"/>
+                    <result column="price" property="price"/>
+                    <result column="begin_time" property="beginTime"/>
+                    <result column="pull_url" property="pullUrl"/>
+                    <result column="status" property="status"/>
+                    <result column="course_id" property="courseId"/>
+                    <result column="preview_img" property="previewImg"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="end_time" property="endTime"/>
+                    <result column="pull_rtmp_url" property="pullRtmpUrl"/>
+                    <result column="type" property="type"/>
+                    <result column="title" property="title"/>
+                    <result column="push_url" property="pushUrl"/>
+                    <result column="address" property="address"/>
+        </resultMap>
+</mapper>

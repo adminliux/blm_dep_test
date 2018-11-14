@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.UserInfoMapper">
+        <resultMap type="UserInfo" id="AliasRM">
+                <id column="alias_user_info_id" property="id"/>
+                    <result column="alias_user_info_job_position" property="jobPosition"/>
+                    <result column="alias_user_info_birth_local_id" property="birthLocalId"/>
+                    <result column="alias_user_info_resident_local" property="residentLocal"/>
+                    <result column="alias_user_info_get_gift_sum" property="getGiftSum"/>
+                    <result column="alias_user_info_likes" property="likes"/>
+                    <result column="alias_user_info_ext_like" property="extLike"/>
+                    <result column="alias_user_info_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_user_info_often_go_local" property="oftenGoLocal"/>
+                    <result column="alias_user_info_user_id" property="userId"/>
+                    <result column="alias_user_info_job_life" property="jobLife"/>
+                    <result column="alias_user_info_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_user_info_grade" property="grade"/>
+                    <result column="alias_user_info_job_field" property="jobField"/>
+                    <result column="alias_user_info_job_city" property="jobCity"/>
+                    <result column="alias_user_info_most_friends_local" property="mostFriendsLocal"/>
+        </resultMap>
+        <resultMap type="UserInfo" id="RM">
+                <id column="id" property="id"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="resident_local" property="residentLocal"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="birth_local_id" property="birthLocalId"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="often_go_local" property="oftenGoLocal"/>
+                    <result column="most_friends_local" property="mostFriendsLocal"/>
+                    <result column="job_city" property="jobCity"/>
+                    <result column="grade" property="grade"/>
+                    <result column="job_position" property="jobPosition"/>
+                    <result column="likes" property="likes"/>
+                    <result column="job_field" property="jobField"/>
+                    <result column="ext_like" property="extLike"/>
+                    <result column="get_gift_sum" property="getGiftSum"/>
+                    <result column="job_life" property="jobLife"/>
+        </resultMap>
+</mapper>

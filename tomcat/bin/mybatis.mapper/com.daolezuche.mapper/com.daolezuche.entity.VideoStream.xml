@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.entity.VideoStream">
+        <resultMap type="VideoStream" id="RM">
+                    <result column="bitrate" property="bitrate"/>
+                    <result column="width" property="width"/>
+                    <result column="height" property="height"/>
+                    <result column="fps" property="fps"/>
+                    <result column="codec" property="codec"/>
+        </resultMap>
+        <resultMap type="VideoStream" id="AliasRM">
+                    <result column="alias_video_stream_fps" property="fps"/>
+                    <result column="alias_video_stream_bitrate" property="bitrate"/>
+                    <result column="alias_video_stream_codec" property="codec"/>
+                    <result column="alias_video_stream_height" property="height"/>
+                    <result column="alias_video_stream_width" property="width"/>
+        </resultMap>
+</mapper>

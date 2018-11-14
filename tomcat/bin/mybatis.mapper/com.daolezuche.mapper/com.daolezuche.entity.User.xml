@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.UserMapper">
+        <resultMap type="User" id="RM">
+                <id column="id" property="id"/>
+                    <result column="gender" property="gender"/>
+                    <result column="age" property="age"/>
+                    <result column="phone_number" property="phoneNumber"/>
+                    <result column="account_id" property="accountId"/>
+                    <result column="birthday" property="birthday"/>
+                    <result column="password" property="password"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="gotye_token" property="gotyeToken"/>
+                    <result column="marital_status" property="maritalStatus"/>
+                    <result column="type" property="type"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="nickname" property="nickname"/>
+                    <result column="balance" property="balance"/>
+                    <result column="signature" property="signature"/>
+                    <result column="head_portrait" property="headPortrait"/>
+        </resultMap>
+        <resultMap type="User" id="AliasRM">
+                <id column="alias_user_id" property="id"/>
+                    <result column="alias_user_account_id" property="accountId"/>
+                    <result column="alias_user_age" property="age"/>
+                    <result column="alias_user_signature" property="signature"/>
+                    <result column="alias_user_gender" property="gender"/>
+                    <result column="alias_user_balance" property="balance"/>
+                    <result column="alias_user_birthday" property="birthday"/>
+                    <result column="alias_user_gotye_token" property="gotyeToken"/>
+                    <result column="alias_user_password" property="password"/>
+                    <result column="alias_user_marital_status" property="maritalStatus"/>
+                    <result column="alias_user_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_user_phone_number" property="phoneNumber"/>
+                    <result column="alias_user_type" property="type"/>
+                    <result column="alias_user_nickname" property="nickname"/>
+                    <result column="alias_user_head_portrait" property="headPortrait"/>
+                    <result column="alias_user_gmt_datetime" property="gmtDatetime"/>
+        </resultMap>
+</mapper>

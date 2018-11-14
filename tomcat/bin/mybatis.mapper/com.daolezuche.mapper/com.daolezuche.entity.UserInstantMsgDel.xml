@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.UserInstantMsgDelMapper">
+        <resultMap type="UserInstantMsgDel" id="RM">
+                    <result column="user_id" property="userId"/>
+                    <result column="target_id" property="targetId"/>
+        </resultMap>
+        <resultMap type="UserInstantMsgDel" id="AliasRM">
+                    <result column="alias_user_instant_msg_del_target_id" property="targetId"/>
+                    <result column="alias_user_instant_msg_del_user_id" property="userId"/>
+        </resultMap>
+</mapper>

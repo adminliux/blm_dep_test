@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.entity.ActivityJava">
+        <resultMap type="ActivityJava" id="RM">
+                    <result column="process" property="process"/>
+                    <result column="ruler" property="ruler"/>
+                    <result column="sign_price" property="signPrice"/>
+                    <result column="spell_price" property="spellPrice"/>
+                    <result column="require" property="require"/>
+                    <result column="classify_id" property="classifyId"/>
+                    <result column="end_date" property="endDate"/>
+                    <result column="start_date" property="startDate"/>
+                    <result column="sponsor" property="sponsor"/>
+                    <result column="statement" property="statement"/>
+                    <result column="img_url" property="imgUrl"/>
+                    <result column="str" property="str"/>
+                    <result column="person_num" property="personNum"/>
+                    <result column="status" property="status"/>
+                    <result column="id" property="id"/>
+                    <result column="way" property="way"/>
+                    <result column="is_delete" property="isDelete"/>
+                    <result column="name" property="name"/>
+                    <result column="awards" property="awards"/>
+                    <result column="activity_id" property="activityId"/>
+                    <result column="judge" property="judge"/>
+        </resultMap>
+        <resultMap type="ActivityJava" id="AliasRM">
+                    <result column="alias_activity_java_end_date" property="endDate"/>
+                    <result column="alias_activity_java_judge" property="judge"/>
+                    <result column="alias_activity_java_is_delete" property="isDelete"/>
+                    <result column="alias_activity_java_statement" property="statement"/>
+                    <result column="alias_activity_java_person_num" property="personNum"/>
+                    <result column="alias_activity_java_classify_id" property="classifyId"/>
+                    <result column="alias_activity_java_spell_price" property="spellPrice"/>
+                    <result column="alias_activity_java_activity_id" property="activityId"/>
+                    <result column="alias_activity_java_awards" property="awards"/>
+                    <result column="alias_activity_java_sponsor" property="sponsor"/>
+                    <result column="alias_activity_java_ruler" property="ruler"/>
+                    <result column="alias_activity_java_str" property="str"/>
+                    <result column="alias_activity_java_require" property="require"/>
+                    <result column="alias_activity_java_sign_price" property="signPrice"/>
+                    <result column="alias_activity_java_img_url" property="imgUrl"/>
+                    <result column="alias_activity_java_id" property="id"/>
+                    <result column="alias_activity_java_process" property="process"/>
+                    <result column="alias_activity_java_start_date" property="startDate"/>
+                    <result column="alias_activity_java_name" property="name"/>
+                    <result column="alias_activity_java_way" property="way"/>
+                    <result column="alias_activity_java_status" property="status"/>
+        </resultMap>
+</mapper>

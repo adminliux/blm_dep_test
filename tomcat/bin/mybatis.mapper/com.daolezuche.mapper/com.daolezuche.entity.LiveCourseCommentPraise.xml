@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.LiveCourseCommentPraiseMapper">
+        <resultMap type="LiveCourseCommentPraise" id="RM">
+                <id column="id" property="id"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="comment_id" property="commentId"/>
+        </resultMap>
+        <resultMap type="LiveCourseCommentPraise" id="AliasRM">
+                <id column="alias_live_course_comment_praise_id" property="id"/>
+                    <result column="alias_live_course_comment_praise_user_id" property="userId"/>
+                    <result column="alias_live_course_comment_praise_comment_id" property="commentId"/>
+                    <result column="alias_live_course_comment_praise_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_live_course_comment_praise_gmt_datetime" property="gmtDatetime"/>
+        </resultMap>
+</mapper>

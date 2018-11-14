@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.UserFriendsMapper">
+        <resultMap type="UserFriends" id="RM">
+                <id column="id" property="id"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="group_id" property="groupId"/>
+                    <result column="target_user_id" property="targetUserId"/>
+        </resultMap>
+        <resultMap type="UserFriends" id="AliasRM">
+                <id column="alias_user_friends_id" property="id"/>
+                    <result column="alias_user_friends_user_id" property="userId"/>
+                    <result column="alias_user_friends_target_user_id" property="targetUserId"/>
+                    <result column="alias_user_friends_group_id" property="groupId"/>
+                    <result column="alias_user_friends_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_user_friends_gmt_datetime" property="gmtDatetime"/>
+        </resultMap>
+</mapper>

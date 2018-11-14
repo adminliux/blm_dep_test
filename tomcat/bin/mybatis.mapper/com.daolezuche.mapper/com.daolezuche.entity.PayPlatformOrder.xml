@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.PayPlatformOrderMapper">
+        <resultMap type="PayPlatformOrder" id="AliasRM">
+                <id column="alias_pay_platform_order_id" property="id"/>
+                    <result column="alias_pay_platform_order_user_id" property="userId"/>
+                    <result column="alias_pay_platform_order_channel" property="channel"/>
+                    <result column="alias_pay_platform_order_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_pay_platform_order_price" property="price"/>
+                    <result column="alias_pay_platform_order_order_no" property="orderNo"/>
+                    <result column="alias_pay_platform_order_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_pay_platform_order_status" property="status"/>
+        </resultMap>
+        <resultMap type="PayPlatformOrder" id="RM">
+                <id column="id" property="id"/>
+                    <result column="status" property="status"/>
+                    <result column="channel" property="channel"/>
+                    <result column="order_no" property="orderNo"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="price" property="price"/>
+                    <result column="user_id" property="userId"/>
+        </resultMap>
+</mapper>

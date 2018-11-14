@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.entity.TranscodeInfo">
+        <resultMap type="TranscodeInfo" id="RM">
+                    <result column="idr_alignment" property="idrAlignment"/>
+                    <result column="transcode_list" property="transcodeList"/>
+        </resultMap>
+        <resultMap type="TranscodeInfo" id="AliasRM">
+                    <result column="alias_transcode_info_idr_alignment" property="idrAlignment"/>
+                    <result column="alias_transcode_info_transcode_list" property="transcodeList"/>
+        </resultMap>
+</mapper>

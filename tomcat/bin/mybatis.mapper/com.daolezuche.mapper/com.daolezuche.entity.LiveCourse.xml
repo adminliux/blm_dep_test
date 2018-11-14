@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.LiveCourseMapper">
+        <resultMap type="LiveCourse" id="AliasRM">
+                <id column="alias_live_course_id" property="id"/>
+                    <result column="alias_live_course_pull_rtmp_url" property="pullRtmpUrl"/>
+                    <result column="alias_live_course_status" property="status"/>
+                    <result column="alias_live_course_price" property="price"/>
+                    <result column="alias_live_course_push_url" property="pushUrl"/>
+                    <result column="alias_live_course_name" property="name"/>
+                    <result column="alias_live_course_pull_url" property="pullUrl"/>
+                    <result column="alias_live_course_begin_time" property="beginTime"/>
+                    <result column="alias_live_course_over_time" property="overTime"/>
+                    <result column="alias_live_course_share_sum" property="shareSum"/>
+                    <result column="alias_live_course_intro" property="intro"/>
+                    <result column="alias_live_course_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_live_course_preview_img" property="previewImg"/>
+                    <result column="alias_live_course_user_id" property="userId"/>
+                    <result column="alias_live_course_room_id" property="roomId"/>
+                    <result column="alias_live_course_collection_sum" property="collectionSum"/>
+                    <result column="alias_live_course_address" property="address"/>
+                    <result column="alias_live_course_classify_id" property="classifyId"/>
+                    <result column="alias_live_course_gmt_datetime" property="gmtDatetime"/>
+        </resultMap>
+        <resultMap type="LiveCourse" id="RM">
+                <id column="id" property="id"/>
+                    <result column="push_url" property="pushUrl"/>
+                    <result column="begin_time" property="beginTime"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="share_sum" property="shareSum"/>
+                    <result column="pull_rtmp_url" property="pullRtmpUrl"/>
+                    <result column="over_time" property="overTime"/>
+                    <result column="collection_sum" property="collectionSum"/>
+                    <result column="name" property="name"/>
+                    <result column="pull_url" property="pullUrl"/>
+                    <result column="price" property="price"/>
+                    <result column="status" property="status"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="preview_img" property="previewImg"/>
+                    <result column="classify_id" property="classifyId"/>
+                    <result column="address" property="address"/>
+                    <result column="intro" property="intro"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="room_id" property="roomId"/>
+        </resultMap>
+</mapper>

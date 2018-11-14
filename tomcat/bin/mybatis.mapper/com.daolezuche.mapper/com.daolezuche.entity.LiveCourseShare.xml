@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.LiveCourseShareMapper">
+        <resultMap type="LiveCourseShare" id="RM">
+                <id column="id" property="id"/>
+                    <result column="content" property="content"/>
+                    <result column="share_id" property="shareId"/>
+                    <result column="target" property="target"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+        </resultMap>
+        <resultMap type="LiveCourseShare" id="AliasRM">
+                <id column="alias_live_course_share_id" property="id"/>
+                    <result column="alias_live_course_share_content" property="content"/>
+                    <result column="alias_live_course_share_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_live_course_share_share_id" property="shareId"/>
+                    <result column="alias_live_course_share_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_live_course_share_target" property="target"/>
+                    <result column="alias_live_course_share_user_id" property="userId"/>
+        </resultMap>
+</mapper>

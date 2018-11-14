@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.LetterMapper">
+        <resultMap type="Letter" id="RM">
+                <id column="id" property="id"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="content" property="content"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="to_user_id" property="toUserId"/>
+                    <result column="status" property="status"/>
+                    <result column="temp_id" property="tempId"/>
+                    <result column="parent_id" property="parentId"/>
+                    <result column="remark" property="remark"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="type" property="type"/>
+        </resultMap>
+        <resultMap type="Letter" id="AliasRM">
+                <id column="alias_letter_id" property="id"/>
+                    <result column="alias_letter_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_letter_content" property="content"/>
+                    <result column="alias_letter_parent_id" property="parentId"/>
+                    <result column="alias_letter_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_letter_user_id" property="userId"/>
+                    <result column="alias_letter_remark" property="remark"/>
+                    <result column="alias_letter_to_user_id" property="toUserId"/>
+                    <result column="alias_letter_temp_id" property="tempId"/>
+                    <result column="alias_letter_status" property="status"/>
+                    <result column="alias_letter_type" property="type"/>
+        </resultMap>
+</mapper>

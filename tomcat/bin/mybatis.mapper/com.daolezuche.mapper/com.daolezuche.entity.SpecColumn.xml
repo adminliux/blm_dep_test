@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.SpecColumnMapper">
+        <resultMap type="SpecColumn" id="RM">
+                <id column="id" property="id"/>
+                    <result column="must_knows" property="mustKnows"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="name" property="name"/>
+                    <result column="pic" property="pic"/>
+                    <result column="status" property="status"/>
+                    <result column="brief_intro" property="briefIntro"/>
+        </resultMap>
+        <resultMap type="SpecColumn" id="AliasRM">
+                <id column="alias_spec_column_id" property="id"/>
+                    <result column="alias_spec_column_name" property="name"/>
+                    <result column="alias_spec_column_brief_intro" property="briefIntro"/>
+                    <result column="alias_spec_column_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_spec_column_pic" property="pic"/>
+                    <result column="alias_spec_column_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_spec_column_status" property="status"/>
+                    <result column="alias_spec_column_must_knows" property="mustKnows"/>
+        </resultMap>
+</mapper>

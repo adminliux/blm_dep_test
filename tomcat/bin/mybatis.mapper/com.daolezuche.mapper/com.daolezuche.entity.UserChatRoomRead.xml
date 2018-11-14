@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.UserChatRoomReadMapper">
+        <resultMap type="UserChatRoomRead" id="AliasRM">
+                <id column="alias_user_chat_room_read_id" property="id"/>
+                    <result column="alias_user_chat_room_read_room_id" property="roomId"/>
+                    <result column="alias_user_chat_room_read_unread_sum" property="unreadSum"/>
+                    <result column="alias_user_chat_room_read_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_user_chat_room_read_user_id" property="userId"/>
+                    <result column="alias_user_chat_room_read_upt_datetime" property="uptDatetime"/>
+        </resultMap>
+        <resultMap type="UserChatRoomRead" id="RM">
+                <id column="id" property="id"/>
+                    <result column="room_id" property="roomId"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="unread_sum" property="unreadSum"/>
+        </resultMap>
+</mapper>

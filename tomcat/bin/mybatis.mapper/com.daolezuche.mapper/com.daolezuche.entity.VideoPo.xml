@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.entity.VideoPo">
+        <resultMap type="VideoPo" id="RM">
+                    <result column="message" property="message"/>
+                    <result column="code" property="code"/>
+                    <result column="code_desc" property="codeDesc"/>
+                    <result column="basic_info" property="basicInfo"/>
+        </resultMap>
+        <resultMap type="VideoPo" id="AliasRM">
+                    <result column="alias_video_po_code" property="code"/>
+                    <result column="alias_video_po_code_desc" property="codeDesc"/>
+                    <result column="alias_video_po_basic_info" property="basicInfo"/>
+                    <result column="alias_video_po_message" property="message"/>
+        </resultMap>
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.entity.Version">
+        <resultMap type="Version" id="AliasRM">
+                    <result column="alias_version_sort" property="sort"/>
+                    <result column="alias_version_version" property="version"/>
+                    <result column="alias_version_checked" property="checked"/>
+                    <result column="alias_version_url" property="url"/>
+                    <result column="alias_version_id" property="id"/>
+        </resultMap>
+        <resultMap type="Version" id="RM">
+                    <result column="version" property="version"/>
+                    <result column="id" property="id"/>
+                    <result column="checked" property="checked"/>
+                    <result column="sort" property="sort"/>
+                    <result column="url" property="url"/>
+        </resultMap>
+</mapper>

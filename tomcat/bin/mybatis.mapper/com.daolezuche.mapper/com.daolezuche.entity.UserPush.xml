@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.UserPushMapper">
+        <resultMap type="UserPush" id="AliasRM">
+                <id column="alias_user_push_id" property="id"/>
+                    <result column="alias_user_push_client_id" property="clientId"/>
+                    <result column="alias_user_push_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_user_push_device_token" property="deviceToken"/>
+                    <result column="alias_user_push_user_id" property="userId"/>
+                    <result column="alias_user_push_upt_datetime" property="uptDatetime"/>
+        </resultMap>
+        <resultMap type="UserPush" id="RM">
+                <id column="id" property="id"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="device_token" property="deviceToken"/>
+                    <result column="client_id" property="clientId"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+        </resultMap>
+</mapper>

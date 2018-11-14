@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.BehaviorAnalysisMapper">
+        <resultMap type="BehaviorAnalysis" id="RM">
+                <id column="id" property="id"/>
+                    <result column="url" property="url"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="content" property="content"/>
+                    <result column="user_id" property="userId"/>
+        </resultMap>
+        <resultMap type="BehaviorAnalysis" id="AliasRM">
+                <id column="alias_behavior_analysis_id" property="id"/>
+                    <result column="alias_behavior_analysis_content" property="content"/>
+                    <result column="alias_behavior_analysis_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_behavior_analysis_user_id" property="userId"/>
+                    <result column="alias_behavior_analysis_url" property="url"/>
+                    <result column="alias_behavior_analysis_upt_datetime" property="uptDatetime"/>
+        </resultMap>
+</mapper>

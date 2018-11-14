@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.UserTagMapper">
+        <resultMap type="UserTag" id="AliasRM">
+                <id column="alias_user_tag_id" property="id"/>
+                    <result column="alias_user_tag_gmt_datetime" property="gmtDatetime"/>
+                    <result column="alias_user_tag_tag_id" property="tagId"/>
+                    <result column="alias_user_tag_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_user_tag_user_id" property="userId"/>
+                    <result column="alias_user_tag_times" property="times"/>
+        </resultMap>
+        <resultMap type="UserTag" id="RM">
+                <id column="id" property="id"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+                    <result column="times" property="times"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="tag_id" property="tagId"/>
+                    <result column="user_id" property="userId"/>
+        </resultMap>
+</mapper>

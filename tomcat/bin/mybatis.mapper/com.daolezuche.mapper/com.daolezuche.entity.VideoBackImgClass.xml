@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.VideoBackImgClassMapper">
+        <resultMap type="VideoBackImgClass" id="AliasRM">
+                <id column="alias_video_back_img_class_id" property="id"/>
+                    <result column="alias_video_back_img_class_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_video_back_img_class_name" property="name"/>
+                    <result column="alias_video_back_img_class_gmt_datetime" property="gmtDatetime"/>
+        </resultMap>
+        <resultMap type="VideoBackImgClass" id="RM">
+                <id column="id" property="id"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="name" property="name"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+        </resultMap>
+</mapper>

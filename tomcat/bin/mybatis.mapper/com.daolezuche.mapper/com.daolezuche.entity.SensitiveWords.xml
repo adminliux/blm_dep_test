@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daolezuche.mapper.SensitiveWordsMapper">
+        <resultMap type="SensitiveWords" id="RM">
+                <id column="id" property="id"/>
+                    <result column="gmt_datetime" property="gmtDatetime"/>
+                    <result column="word" property="word"/>
+                    <result column="upt_datetime" property="uptDatetime"/>
+        </resultMap>
+        <resultMap type="SensitiveWords" id="AliasRM">
+                <id column="alias_sensitive_words_id" property="id"/>
+                    <result column="alias_sensitive_words_upt_datetime" property="uptDatetime"/>
+                    <result column="alias_sensitive_words_word" property="word"/>
+                    <result column="alias_sensitive_words_gmt_datetime" property="gmtDatetime"/>
+        </resultMap>
+</mapper>
